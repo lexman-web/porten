@@ -22,3 +22,16 @@ for (let i = 0; i < goodsCards.length; i++) {
 	});
 };
 
+/* =================== BURGER MENU ================= */
+// elements
+const burgerButton = document.querySelector(".burger-button");
+const burgerLines = document.querySelectorAll(".burger-button__line");
+const burgerMenu = document.querySelector(".menu");
+// logic
+burgerButton.addEventListener("click", function() {
+	for (let i = 0; i < burgerLines.length; i++) {
+		burgerLines[i].classList.toggle("burger-button__line--active")		
+	};
+	burgerMenu.classList.toggle("menu--open");
+	document.body.classList.toggle("body--hidden")
+})
