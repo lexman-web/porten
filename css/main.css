@@ -245,6 +245,7 @@ img {
 .hero__text {
 	max-width: 730px;
 	margin-top: 80px;
+	padding: 0 15px;
 	font-size: 16px;
 	line-height: 150%;
 	text-align: center;
@@ -267,6 +268,7 @@ img {
 	flex-flow: column;
 	align-items: center;
 	color: var(--main-font);
+	text-align: center;
 }
 .heading__title {
 	margin-bottom: 40px;

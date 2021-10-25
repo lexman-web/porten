@@ -2,7 +2,9 @@
 @media screen and (max-width: 1800px) {
 	/* season goods */
 	.season-goods {
-		gap: 50px;
+		padding: 39px 15px;
+		justify-content: space-between;
+		gap: 20px;
 	}
 	.season-goods__card:last-child {
 		display: none;
@@ -145,7 +147,6 @@
 		transform: rotate(-45deg);
 	}
 
-
 	/* brend */
 	.brend {
 		width: 260px;
@@ -172,15 +173,50 @@
 	}
 }
 
+@media screen and (max-width: 587px) {
+	/* collection */
+	.collection {
+		padding: 80px 15px;
+		text-align: center;
+	}
+}
+
+
 /* mobile */
 @media screen and (max-width: 576px) {
+	/* season goods */
+	.season-goods {
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-items: center;
+	}
+
+	/* new goods*/
+	.new-goods-list {
+		grid-template-columns: 1fr;
+	}
+
 	/* footer */
 	.footer {
 		padding: 50px 0px;
 	}
 }
 
+@media screen and (max-width: 500px) {
+	/* old collection */
+	.collection-2018 {
+		padding: 80px 15px;
+		text-align: center;
+	}
+}
+
+
 @media screen and (max-width: 430px) {
+	/* season */
+	.season-goods__card {
+		max-width: 100%;
+	}
+	
 	/* footer */
 	.mailing-form__area {
 		height: auto;
@@ -188,4 +224,11 @@
 		flex-flow: column;
 		gap: 20px;
 	}
-}
+	.mailing-form__input {
+		padding: 10px;
+	}
+	.mailing-form__button {
+		height: 42px;
+		position: relative;
+	}
+}	
